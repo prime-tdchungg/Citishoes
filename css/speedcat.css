@@ -1,0 +1,418 @@
+.card-shoes {
+  margin: 120px auto;
+  background-color: lightgray;
+  width: 300px;
+  height: 370px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.card-shoes .r-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-shoes .r-icon i {
+  color: rgb(66, 64, 64);
+  font-size: 24px;
+  z-index: 1;
+}
+
+.card-shoes .r-img {
+  margin-top: 10%;
+}
+
+.card-shoes .r-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-shoes .r-name-prime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(66, 64, 64);
+}
+
+.card-shoes .r-size-color-button {
+  margin-top: 70px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(66, 64, 64);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card-shoes .r-size-color-button .card-size {
+  padding: 0px;
+  align-content: center;
+}
+
+/* .card-shoes .r-size-color-button .card-size .card-size-number {
+  border-radius: 8px;
+} */
+
+.card-shoes .r-size-color-button .card-size span {
+  margin-right: 32px;
+}
+
+.card-shoes .r-size-color-button .card-size {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-shoes .r-size-color-button .card-color {
+  margin-top: 10px;
+}
+
+.card-shoes .r-size-color-button .card-color span {
+  padding: 0px;
+  margin-left: 9px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 40%;
+}
+
+.card-shoes .r-size-color-button .r-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-shoes .r-size-color-button .r-button .card-button {
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.card-shoes .r-size-color-button .r-button .card-button p {
+  margin: 0px;
+  color: rgb(126, 126, 162);
+}
+
+/* HOVER */
+
+.card-shoes:hover {
+  /* background: linear-gradient(to top, rgb(169, 169, 255),  rgb(254, 184, 184)); */
+  background: linear-gradient(
+    to top,
+    rgb(183, 183, 246),
+    rgb(238, 224, 250),
+    rgb(254, 184, 184)
+  );
+}
+
+.card-shoes:hover .r-img {
+  transform: translate(-20px, -110px) rotate(-40deg);
+  transition: 0.8s;
+}
+
+.card-shoes:hover .r-name-prime {
+  transform: translateY(-75px);
+  transition: 1s;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.card-shoes:hover .r-size-color-button {
+  transform: translate(-15px, -135px);
+  transition: 1s;
+  align-items: flex-start;
+  margin-left: 20px;
+  visibility: visible;
+  opacity: 100;
+}
+
+/* Thẻ xem thêm */
+
+.card-other {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.ctn-other {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#other-shoes {
+  align-content: center;
+  justify-content: center;
+}
+
+#other-shoes-button {
+  padding: 40px;
+  background: lemonchiffon;
+  border: 5px double lightblue;
+  border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+  .card-shoes {
+    margin: 65px auto;
+    width: 240px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .card-shoes .r-icon i {
+    font-size: 22px;
+  }
+  .card-shoes .r-name-prime {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .card-shoes .r-size-color-button {
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .card-shoes .r-size-color-button .card-size span {
+    margin-right: 20px;
+  }
+  .card-shoes .r-size-color-button .card-color {
+    margin-top: 10px;
+  }
+  .card-shoes .r-size-color-button .card-color span {
+    margin-left: 7px;
+    width: 12px;
+    height: 12px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button p {
+    margin: 0px;
+  }
+  /* HOVER */
+  .card-shoes:hover .r-img {
+    transform: translate(-15px, -80px) rotate(-30deg);
+  }
+  .card-shoes:hover .r-name-prime {
+    transform: translateY(-65px);
+    margin-left: 20px;
+  }
+  .card-shoes:hover .r-size-color-button {
+    transform: translate(-15px, -120px);
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-shoes {
+    margin: 70px auto;
+    width: 280px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .card-shoes .r-icon i {
+    font-size: 22px;
+  }
+  .card-shoes .r-name-prime {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .card-shoes .r-size-color-button {
+    margin-top: 70px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .card-shoes .r-size-color-button .card-size span {
+    margin-right: 25px;
+  }
+  .card-shoes .r-size-color-button .card-color {
+    margin-top: 10px;
+  }
+  .card-shoes .r-size-color-button .card-color span {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button p {
+    margin: 0px;
+  }
+  /* HOVER */
+  .card-shoes:hover .r-img {
+    transform: translate(-15px, -80px) rotate(-30deg);
+  }
+  .card-shoes:hover .r-name-prime {
+    transform: translateY(-65px);
+    margin-left: 20px;
+  }
+  .card-shoes:hover .r-size-color-button {
+    transform: translate(-15px, -120px);
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-shoes {
+    margin: 120px auto;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .card-shoes .r-icon i {
+    font-size: 24px;
+  }
+  .card-shoes .r-name-prime {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .card-shoes .r-size-color-button {
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-shoes .r-size-color-button .card-size span {
+    margin-right: 32px;
+  }
+  .card-shoes .r-size-color-button .card-color {
+    margin-top: 10px;
+  }
+  .card-shoes .r-size-color-button .card-color span {
+    margin-left: 9px;
+    width: 15px;
+    height: 15px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button p {
+    margin: 0px;
+  }
+  /* HOVER */
+  .card-shoes:hover .r-img {
+    transform: translate(-20px, -110px) rotate(-35deg);
+  }
+  .card-shoes:hover .r-name-prime {
+    transform: translateY(-75px);
+    margin-left: 20px;
+  }
+  .card-shoes:hover .r-size-color-button {
+    transform: translate(-15px, -135px);
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-shoes {
+    margin: 120px auto;
+    width: 250px;
+    height: 330px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .card-shoes .r-icon i {
+    font-size: 24px;
+  }
+  .card-shoes .r-name-prime {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .card-shoes .r-size-color-button {
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-shoes .r-size-color-button .card-size span {
+    margin-right: 32px;
+  }
+  .card-shoes .r-size-color-button .card-color {
+    margin-top: 10px;
+  }
+  .card-shoes .r-size-color-button .card-color span {
+    margin-left: 9px;
+    width: 15px;
+    height: 15px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button p {
+    margin: 0px;
+  }
+  /* HOVER */
+  .card-shoes:hover .r-img {
+    transform: translate(-20px, -110px) rotate(-35deg);
+  }
+  .card-shoes:hover .r-name-prime {
+    transform: translateY(-75px);
+    margin-left: 20px;
+  }
+  .card-shoes:hover .r-size-color-button {
+    transform: translate(-15px, -135px);
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card-shoes {
+    margin: 120px auto;
+    width: 300px;
+    height: 370px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .card-shoes .r-icon i {
+    font-size: 24px;
+  }
+  .card-shoes .r-name-prime {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .card-shoes .r-size-color-button {
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-shoes .r-size-color-button .card-size span {
+    margin-right: 32px;
+  }
+  .card-shoes .r-size-color-button .card-color {
+    margin-top: 10px;
+  }
+  .card-shoes .r-size-color-button .card-color span {
+    margin-left: 9px;
+    width: 15px;
+    height: 15px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .card-shoes .r-size-color-button .r-button .card-button p {
+    margin: 0px;
+  }
+  /* HOVER */
+  .card-shoes:hover .r-img {
+    transform: translate(-20px, -110px) rotate(-35deg);
+  }
+  .card-shoes:hover .r-name-prime {
+    transform: translateY(-75px);
+    margin-left: 20px;
+  }
+  .card-shoes:hover .r-size-color-button {
+    transform: translate(-15px, -135px);
+    margin-left: 20px;
+  }
+}

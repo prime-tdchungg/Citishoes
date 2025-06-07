@@ -1,0 +1,38 @@
+.as-main {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #ffff;
+  padding: 15px 50px;
+}
+
+.as-main .as-r2 {
+  margin: 0px;
+  padding: 0px 50px;
+}
+
+.as-main .as-r2 .as-brand {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+#myTab li {
+  font-size: 20px;
+  padding: 10px;
+}
+
+#myTab li:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  color: rgb(68, 68, 138);
+  border: none;
+}
+
+#myTabContent div {
+  opacity: 1;
+}
+
+.card-shoes {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}

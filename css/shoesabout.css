@@ -1,0 +1,519 @@
+#carouselExampleInterval {
+  width: 100%;
+  height: 100%;
+}
+
+#carouselExampleInterval .carousel-inner {
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid rgb(65, 65, 65); */
+}
+
+.carousel-item img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sa-check {
+  color: green;
+  font-weight: bold;
+}
+
+.sa-row {
+  padding: 20px 230px 50px 230px;
+}
+
+.sa-item1,
+.sa-item2 {
+  height: 650px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  /* border: 5px solid red; */
+}
+
+.sa-item2 div {
+  display: flex;
+  align-items: center;
+}
+
+.sa-item2 {
+  display: flex;
+  padding: 30px 30px 80px 30px;
+}
+
+#buy-shoes {
+  font-size: 18px;
+  padding: 5px 10px;
+  background: linear-gradient(
+    to right,
+    rgb(165, 165, 231),
+    rgb(210, 181, 236),
+    rgb(255, 108, 108)
+  );
+  border: 2px solid rgb(255, 144, 132);
+  border-radius: 10px;
+}
+
+#buy-shoes:hover {
+  margin-left: 10px;
+  transition: 0.75s;
+  transform: scale(1.1);
+}
+
+.sa-item2 .carousel-item {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#sa-name {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(86, 86, 86);
+}
+
+#sa-cost {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(86, 86, 86);
+}
+
+#sa-size,
+#sa-color,
+#sa-ship,
+#ship-value,
+#sa-check {
+  font-size: 23px;
+}
+
+.sa-item2 .free-ship {
+  background-color: rgb(94, 181, 133);
+  font-size: 16px;
+  padding: 5px 15px;
+  color: white;
+  font-weight: 700;
+  border: 5px solid green;
+  border-radius: 10px;
+  transform: skewX(-15deg);
+}
+
+#col-value-size {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin: 0px;
+  font-weight: 600;
+  color: rgb(10, 23, 42);
+}
+
+#color-value {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+
+#value-size {
+  display: flex;
+  list-style: none;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#value-size li {
+  padding: 5px 7px;
+  margin-right: 10px;
+  background-color: rgb(203, 203, 203);
+  border-radius: 8px;
+}
+
+#value-size li:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#color-value span {
+  margin-right: 10px;
+  font-size: 30px;
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  border: black 2px solid;
+  border-radius: 12px;
+}
+
+#color-value span:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#slide-button-right {
+  margin-right: -120px;
+  padding: 17px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+#prev-icon,
+#next-icon {
+  background-color: rgb(150, 150, 150);
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 576px) {
+  .sa-row {
+    padding: 20px;
+  }
+  .sa-item1 {
+    height: 500px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .sa-item2 {
+    height: 350px;
+    margin: 0px;
+    padding: 0px 20px 0px 20px;
+  }
+  #buy-shoes {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #sa-name {
+    font-size: 30px;
+  }
+  #sa-cost {
+    font-size: 28px;
+  }
+  #sa-size,
+  #sa-color,
+  #sa-ship,
+  #ship-value,
+  #sa-check {
+    font-size: 22px;
+  }
+  .sa-item2 .free-ship {
+    font-size: 14px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border: 5px solid green;
+    border-radius: 10px;
+  }
+  #col-value-size {
+    font-size: 15px;
+  }
+  #value-size li {
+    padding: 5px 7px;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 8px;
+  }
+  #color-value span {
+    margin-right: 10px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 630px) {
+  .sa-item1 {
+    height: 610px;
+    margin: 0px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sa-row {
+    padding: 20px;
+  }
+  .sa-item1 {
+    height: 700px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .sa-item2 {
+    height: 400px;
+    margin: 0px;
+    padding: 10px 20px 0px 20px;
+  }
+  #buy-shoes {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #sa-name {
+    font-size: 30px;
+  }
+  #sa-cost {
+    font-size: 28px;
+  }
+  #sa-size,
+  #sa-color,
+  #sa-ship,
+  #ship-value,
+  #sa-check {
+    font-size: 22px;
+  }
+  .sa-item2 .free-ship {
+    font-size: 14px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border: 5px solid green;
+    border-radius: 10px;
+  }
+  #col-value-size {
+    font-size: 15px;
+  }
+  #value-size li {
+    padding: 5px 7px;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 8px;
+  }
+  #color-value span {
+    margin-right: 10px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 830px) {
+  .sa-item1 {
+    height: 800px;
+    margin: 0px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sa-row {
+    padding: 20px;
+  }
+  .sa-item1 {
+    height: 500px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .sa-item2 {
+    height: 500px;
+    margin: 0px;
+    padding: 20px 20px 40px 20px;
+  }
+  #buy-shoes {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #sa-name {
+    font-size: 30px;
+  }
+  #sa-cost {
+    font-size: 28px;
+  }
+  #sa-size,
+  #sa-color,
+  #sa-ship,
+  #ship-value,
+  #sa-check {
+    font-size: 22px;
+  }
+  .sa-item2 .free-ship {
+    font-size: 14px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border: 5px solid green;
+    border-radius: 10px;
+  }
+  #col-value-size {
+    font-size: 15px;
+  }
+  #value-size li {
+    padding: 5px 7px;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 8px;
+  }
+  #color-value span {
+    margin-right: 10px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sa-row {
+    padding: 20px 150px 50px 150px;
+  }
+  .sa-item1 {
+    height: 500px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .sa-item2 {
+    height: 480px;
+    margin: 0px;
+    padding: 20px 20px 0px 20px;
+  }
+  #buy-shoes {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #sa-name {
+    font-size: 32px;
+  }
+  #sa-cost {
+    font-size: 28px;
+  }
+  #sa-size,
+  #sa-color,
+  #sa-ship,
+  #ship-value,
+  #sa-check {
+    font-size: 22px;
+  }
+  .sa-item2 .free-ship {
+    font-size: 14px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border: 5px solid green;
+    border-radius: 10px;
+  }
+  #col-value-size {
+    font-size: 15px;
+  }
+  #value-size li {
+    padding: 5px 7px;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 8px;
+  }
+  #color-value span {
+    margin-right: 10px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .sa-row {
+    padding: 20px 220px 50px 220px;
+  }
+  .sa-item1 {
+    height: 570px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .sa-item2 {
+    height: 570px;
+    margin: 0px;
+    padding: 20px 20px 0px 20px;
+  }
+  #buy-shoes {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #sa-name {
+    font-size: 35px;
+  }
+  #sa-cost {
+    font-size: 30px;
+  }
+  #sa-size,
+  #sa-color,
+  #sa-ship,
+  #ship-value,
+  #sa-check {
+    font-size: 25px;
+  }
+  .sa-item2 .free-ship {
+    font-size: 16px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border: 5px solid green;
+    border-radius: 10px;
+  }
+  #col-value-size {
+    font-size: 15px;
+  }
+  #value-size li {
+    padding: 5px 7px;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 8px;
+  }
+  #color-value span {
+    margin-right: 10px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .sa-row {
+    padding: 20px 300px 50px 300px;
+  }
+  .sa-item1,
+  .sa-item2 {
+    height: 650px;
+    margin: 0px;
+    padding: 10px;
+  }
+  #buy-shoes {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #sa-name {
+    font-size: 35px;
+  }
+  #sa-cost {
+    font-size: 30px;
+  }
+  #sa-size,
+  #sa-color,
+  #sa-ship,
+  #ship-value,
+  #sa-check {
+    font-size: 27px;
+  }
+  .sa-item2 .free-ship {
+    font-size: 16px;
+    padding: 5px 15px;
+    font-weight: 700;
+    border: 5px solid green;
+    border-radius: 10px;
+  }
+  #col-value-size {
+    font-size: 15px;
+  }
+  #value-size li {
+    padding: 5px 7px;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 8px;
+  }
+  #color-value span {
+    margin-right: 10px;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
