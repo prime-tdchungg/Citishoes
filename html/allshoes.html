@@ -60,12 +60,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link active"
-                id="home-tab"
+                id="nike"
                 data-toggle="tab"
                 data-target="#nike-tab"
                 type="button"
                 role="tab"
-                aria-controls="home"
+                aria-controls="nike-tab"
                 aria-selected="true"
               >
                 NIKE
@@ -74,12 +74,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="profile-tab"
+                id="puma"
                 data-toggle="tab"
                 data-target="#puma-tab"
                 type="button"
                 role="tab"
-                aria-controls="profile"
+                aria-controls="puma-tab"
                 aria-selected="false"
               >
                 PUMA
@@ -88,12 +88,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="contact-tab"
+                id="adidas"
                 data-toggle="tab"
                 data-target="#adidas-tab"
                 type="button"
                 role="tab"
-                aria-controls="contact"
+                aria-controls="adidas-tab"
                 aria-selected="false"
               >
                 ADIDAS
@@ -102,12 +102,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="contact-tab"
+                id="asics"
                 data-toggle="tab"
                 data-target="#asics-tab"
                 type="button"
                 role="tab"
-                aria-controls="contact"
+                aria-controls="asics-tab"
                 aria-selected="false"
               >
                 ASICS
@@ -116,9 +116,9 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="contact-tab"
+                id="newbalance"
                 data-toggle="tab"
-                data-target="#nb-tab"
+                data-target="#newbalance-tab"
                 type="button"
                 role="tab"
                 aria-controls="contact"
@@ -785,7 +785,7 @@
             </div>
             <div
               class="tab-pane fade"
-              id="nb-tab"
+              id="newbalance-tab"
               role="tabpanel"
               aria-labelledby="contact-tab"
             >
@@ -1009,6 +1009,52 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const brand = urlParams.get("brand");
+
+        // Hàm để kích hoạt một tab cụ thể
+        function activateTab(tabId) {
+          // Xóa active/show từ tất cả các tab và nội dung tab
+          document.querySelectorAll(".nav-link").forEach((tab) => {
+            tab.classList.remove("active");
+            tab.setAttribute("aria-selected", "false"); // Cập nhật aria-selected
+          });
+          document.querySelectorAll(".tab-pane").forEach((pane) => {
+            pane.classList.remove("show", "active");
+          });
+
+          // Tìm và kích hoạt nút tab
+          const tabButton = document.getElementById(tabId);
+          if (tabButton) {
+            // **ĐIỀU CHỈNH Ở ĐÂY:** Sử dụng data-target cho Bootstrap 4
+            const targetContentId = tabButton.getAttribute("data-target");
+            const tabContent = targetContentId
+              ? document.querySelector(targetContentId)
+              : null;
+
+            if (tabContent) {
+              tabButton.classList.add("active");
+              tabButton.setAttribute("aria-selected", "true");
+
+              tabContent.classList.add("show", "active");
+            }
+          }
+        }
+
+        if (brand) {
+          // Xây dựng ID của tab button dựa trên tham số 'brand'
+          const targetTabId = `${brand}`;
+          activateTab(targetTabId);
+        } else {
+          // Nếu không có tham số 'brand', kích hoạt tab ALL SHOES mặc định
+          activateTab("nike");
+        }
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
