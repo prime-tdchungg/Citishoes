@@ -78,7 +78,10 @@
   display: inline-block;
   border-radius: 40%;
 }
-
+/* Thêm cái này vào file CSS của m */
+.carousel-item.active {
+  display: block;
+}
 .card-shoes .r-size-color-button .r-button {
   display: flex;
   justify-content: center;

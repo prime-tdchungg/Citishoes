@@ -6,18 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Fjalla+One&family=Fruktur:ital@0;1&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -36,17 +30,24 @@
           <div class="col-6 col-nav">
             <button onclick="" class="fruktur" id="CiTis">CiTiS</button>
             <a class="header-link" href="/index.html"><span>HOME</span> </a>
-            <a class="header-link" href="/html/allshoes.html"
-              ><span style="width: 100px">ALL SHOES</span></a
+
+            <a class="header-link" href="/html/brand.html"
+              ><span>BRAND</span></a
             >
+            <a class="header-link" href="/html/allshoes.html"
+              ><span>ALL SHOES</span>
+            </a>
           </div>
           <div class="col-6 col-search">
             <input
               type="search"
               placeholder=" Send Feedback..."
               id="box-search"
+              style="display: none"
             />
-            <button id="submit-search" type="submit">Send</button>
+            <button id="submit-search" type="submit">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -152,7 +153,6 @@
       </div>
       <!-- SLIDE -->
       <h2 class="h2-text" id="buynow-text">MUA NGAY, GIÀY VỀ LIỀN TAY</h2>
-      <!-- SECTION 4 -->
       <div class="section-five">
         <div class="container-fluid ctn-s5">
           <div
@@ -180,227 +180,8 @@
                 <div class="slide-one d-block w-100">
                   <div class="container-fluid inner-slide">
                     <div class="row r-inner-slide">
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img
-                                  src="/img/slide/SpeedcatArchive.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>PUMA SPEED CAT</span>
-                              <span>1.700.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 43</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span
-                                  style="background-color: rgb(125, 179, 215)"
-                                ></span>
-                                <span
-                                  style="background-color: rgb(67, 121, 51)"
-                                ></span>
-                                <span
-                                  style="background-color: rgb(136, 20, 20)"
-                                ></span>
-                                <span style="background-color: black"></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/cat.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img src="/img/slide/samba.png" alt="" />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>ADIDAS SAMBA</span>
-                              <span>1.400.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 43</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span
-                                  class="blue"
-                                  style="background-color: rgb(255, 255, 255)"
-                                ></span>
-                                <span
-                                  class="green"
-                                  style="background-color: rgb(208, 122, 199)"
-                                ></span>
-                                <span
-                                  class="red"
-                                  style="background-color: rgb(195, 32, 32)"
-                                ></span>
-                                <span
-                                  class="black"
-                                  style="background-color: black"
-                                ></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/samba.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img
-                                  src="/img/slide/Jordan-Legacy-312-Low-Black-Toe-CD7069-160-Release-Date-1.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>JORDAN LEGACY</span>
-                              <span>2.500.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 43</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span style="background-color: white"></span>
-                                <span
-                                  style="background-color: rgb(214, 227, 94)"
-                                ></span>
-                                <span
-                                  style="background-color: rgb(255, 55, 55)"
-                                ></span>
-                                <span style="background-color: black"></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/legacy.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img src="/img/slide/nb.png" alt="" />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>NEW BALANCE 574</span>
-                              <span>1.900.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 43</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span style="background-color: white"></span>
-                                <span
-                                  style="background-color: rgb(160, 137, 20)"
-                                ></span>
-                                <span
-                                  style="background-color: darkgreen"
-                                ></span>
-                                <span
-                                  style="background-color: lightgray"
-                                ></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/574.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div id="homepage-product-slider" class="row">
+                        <p>LOADING.....</p>
                       </div>
                     </div>
                   </div>
@@ -410,159 +191,8 @@
                 <div class="slide-two d-block w-100">
                   <div class="container-fluid inner-slide">
                     <div class="row r-inner-slide">
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img src="/img/slide/nikesb.png" alt="" />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>NIKE DUNK LOW</span>
-                              <span>2.000.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 43</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span
-                                  class="blue"
-                                  style="background-color: rgb(246, 183, 236)"
-                                ></span>
-                                <span
-                                  class="green"
-                                  style="background-color: rgb(67, 121, 51)"
-                                ></span>
-                                <span
-                                  class="red"
-                                  style="background-color: rgb(97, 41, 41)"
-                                ></span>
-                                <span
-                                  class="black"
-                                  style="background-color: black"
-                                ></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/sb.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img
-                                  src="/img/slide/ipad_air-jordan-1-low-wmns-pink-oxford.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>JORDAN LOW PINK</span>
-                              <span>2.100.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 40</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span
-                                  style="background-color: lightpink"
-                                ></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/pink.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-xl-3 cl-center">
-                        <div class="card-shoes">
-                          <div class="container">
-                            <div class="row r-icon">
-                              <div class="icon-heart">
-                                <i class="bx bx-heart"></i>
-                              </div>
-                              <div class="icon-cart">
-                                <i class="bx bx-cart"></i>
-                              </div>
-                            </div>
-                            <div class="row r-img">
-                              <div class="csr2-img">
-                                <img src="/img/nikeair.png" alt="" />
-                              </div>
-                            </div>
-                            <div class="row r-name-prime">
-                              <span>NIKE DEVIN BOCKER</span>
-                              <span>2.700.000 VND</span>
-                            </div>
-                            <div class="row r-size-color-button">
-                              <div class="col-12" id="r-size">
-                                <div class="card-size">
-                                  <span>Size</span>
-                                  <span class="card-size-number">36 - 43</span>
-                                </div>
-                              </div>
-                              <div class="col-3 card-color">
-                                <p>Color</p>
-                              </div>
-                              <div class="col-9 card-color">
-                                <span
-                                  style="background-color: lightblue"
-                                ></span>
-                              </div>
-                              <div class="col-12 r-button">
-                                <a href="/html/devin.html"
-                                  ><button class="card-button">
-                                    <p>Xem chi tiết</p>
-                                  </button></a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div id="expensive-product-slider" class="row">
+                        <p>LOADING.....</p>
                       </div>
                     </div>
                   </div>
@@ -730,5 +360,10 @@
       src="https://kit.fontawesome.com/f37e9392fa.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="/js/data.js"></script>
   </body>
 </html>

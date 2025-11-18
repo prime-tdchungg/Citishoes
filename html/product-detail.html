@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f37e9392fa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/speedcat.css" />
+
+    <style>
+      /* CSS sửa lỗi ảnh to quá khổ */
+
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 500px;
+      }
+
+      .color-dot {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin-right: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row r-navbar">
+          <div class="col-6 col-nav">
+            <button onclick="" class="fruktur" id="CiTis">CiTiS</button>
+            <a class="header-link" href="/index.html"><span>HOME</span> </a>
+
+            <a class="header-link" href="/html/brand.html"
+              ><span>BRAND</span></a
+            >
+            <a class="header-link" href="/html/allshoes.html"
+              ><span>ALL SHOES</span>
+            </a>
+          </div>
+          <div class="col-6 col-search">
+            <input
+              type="search"
+              placeholder=" Send Feedback..."
+              id="box-search"
+              style="display: none"
+            />
+            <button id="submit-search" type="submit">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container" style="margin-top: 50px">
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="text-center p-5" style="background: #f0f0f0">
+                  Đang tải ảnh...
+                </p>
+              </div>
+            </div>
+
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleInterval"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+                style="filter: invert(1)"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleInterval"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+                style="filter: invert(1)"
+              ></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <h1 id="sa-name" style="font-weight: 900; text-transform: uppercase">
+            LOADING...
+          </h1>
+
+          <h2
+            id="sa-cost"
+            style="color: #d10024; margin: 20px 0; font-weight: bold"
+          >
+            ... VND
+          </h2>
+
+          <p>
+            <i class="fa-solid fa-check-circle text-success"></i> Kiểm tra hàng
+            trước khi thanh toán
+          </p>
+          <p>
+            <i class="fa-solid fa-truck-fast text-primary"></i> Freeship toàn
+            quốc
+          </p>
+          <hr />
+
+          <div class="form-group">
+            <label style="font-weight: bold">Kích cỡ:</label>
+            <div>
+              <button class="btn btn-outline-secondary btn-sm m-1">36</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">37</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">38</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">39</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">40</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">41</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">42</button>
+              <button class="btn btn-outline-secondary btn-sm m-1">43</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label style="font-weight: bold">Màu sắc:</label>
+            <div id="color-value"></div>
+          </div>
+
+          <br />
+          <a
+            href="https://www.instagram.com/prime_tdchungg/"
+            target="_blank"
+            class="btn btn-dark btn-lg btn-block"
+          >
+            LIÊN HỆ ĐẶT HÀNG NGAY
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footer-c1">
+        <h2>10% OFF for CiTi members</h2>
+      </div>
+      <div class="container-fuild footer-c2">
+        <div class="row footer-r2">
+          <div class="col-4 footer-item">
+            <p class="p-footer">THEO DÕI CHÚNG TÔI</p>
+            <div class="contact-footer">
+              <ul class="ul-contact">
+                <li>
+                  <a
+                    href="https://www.facebook.com/prime.tdchungg?locale=vi_VN"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-facebook" id="icon-fb"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/prime_tdchungg/"
+                    target="_blank"
+                    ><i class="fab fa-instagram-square" id="icon-ins"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <span class="p-footer">TRỞ THÀNH HỘI VIÊN & HƯỞNG ƯU ĐÃI 10%</span>
+            <div class="row">
+              <div class="col-12">
+                <a
+                  href="https://www.instagram.com/prime_tdchungg/"
+                  target="_blank"
+                >
+                  <button id="contact-button">Đăng kí ngay >></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 footer-item">
+            <div><button class="fruktur" id="CiTis">CiTiS</button></div>
+            <p class="p-footer">Hotline: 0911319934</p>
+            <p class="p-footer">
+              Address: Đường 19/5 Khu đô thị Văn Quán, Văn Quán, Hà Đông, Hanoi,
+              Vietnam
+            </p>
+          </div>
+          <div class="col-4 footer-item">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1317.1512551070289!2d105.78677450972009!3d20.973935864391997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd3ea5cbbc3%3A0x7e9d9599c7c318ea!2zxJDDrG5oIFbEg24gUXXDoW4gKMSQ4buRaSBEaeG7h24gVHLhuqFtIFkgVOG6vykgLSDEkMaw4budbmcgMTkvNQ!5e0!3m2!1sen!2s!4v1749051323370!5m2!1sen!2s"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="../js/product-detail-script.js"></script>
+  </body>
+</html>

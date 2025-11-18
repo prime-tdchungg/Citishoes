@@ -1,3 +1,32 @@
+/* COLOR */
+.color-swatch.White {
+  background-color: #ffffff;
+}
+.color-swatch.Black {
+  background-color: #000000;
+}
+.color-swatch.Red {
+  background-color: #812020ff;
+}
+.color-swatch.Yellow {
+  background-color: #ffff00;
+}
+.color-swatch.Green {
+  background-color: #2c741aff=;
+}
+.color-swatch.Pink {
+  background-color: #ee8bcdff;
+}
+.color-swatch.Blue {
+  background-color: #6d9bffff;
+}
+.color-swatch.Purple {
+  background-color: #612f5dff;
+}
+.color-swatch.Gray {
+  background-color: #7a7a7aff;
+}
+
 .as-main {
   margin-top: 20px;
   margin-bottom: 50px;
@@ -35,4 +64,24 @@
 .card-shoes {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.box_sxep {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box_sxep .sxep_item {
+  background-color: #ffff;
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid navy;
+  border-radius: 7px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
 }
