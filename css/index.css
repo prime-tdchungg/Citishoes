@@ -55,7 +55,7 @@ a:hover {
   display: flex;
   justify-content: right;
   height: 33px;
-  display: flex;
+  padding: 0px;
 }
 
 #submit-search {
